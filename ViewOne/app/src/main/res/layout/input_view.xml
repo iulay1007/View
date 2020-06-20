@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="-"
+            android:textSize="30sp"
+            android:id="@+id/minus"
+            android:background="@drawable/input_left_bg"
+            />
+        <EditText
+            android:layout_width="80dp"
+            android:id="@+id/value_edt"
+            android:layout_height="match_parent"
+           android:background="@drawable/input_center_bg"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:focusable="false"
+            android:text="0"
+            />
+
+        <TextView
+            android:layout_width="80dp"
+            android:id="@+id/plus"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="+"
+            android:textSize="18sp"
+            android:background="@drawable/input_right_bg"/>
+    </LinearLayout>
+</LinearLayout>
